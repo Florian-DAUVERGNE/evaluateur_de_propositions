@@ -1,5 +1,5 @@
 from terminaltables import AsciiTable
-from truthParser import lexer, parser  
+from Parser import lexer, parser  
 
 def help():
     #Affiche un message d'aide avec la liste des symboles valides pour les formules de logique de proposition.
