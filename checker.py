@@ -29,7 +29,7 @@ while True:
         break
 
     # Vérifier la satisfiabilité de la formule propositionnelle
-    if is_satisfiable(proposition):
+    if is_satisfiable(proposition.lower()):
         print("La formule est satisfiable.")
     else:
         print("La formule n'est pas satisfiable.")
