@@ -37,5 +37,8 @@ while True:
         help()  # Afficher l'aide si l'utilisateur tape "help"
         continue
     sentence = syntax_converter(s)  # Convertir la syntaxe de la formule saisie
-    if(parser.parse(sentence, lexer=lexer)) : 
-        print ("Formule correcte : {}".format(sentence))  # Afficher la formule si elle est correcte
+    try :
+        if(parser.parse(sentence, lexer=lexer)): 
+            print ("Formule correcte : {}".format(sentence))  # Afficher la formule si elle est correcte
+    except:
+        print ("Formule incorrecte : {}".format(sentence))

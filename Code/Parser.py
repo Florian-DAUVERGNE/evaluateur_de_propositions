@@ -49,11 +49,10 @@ def p_expression_group(p):
     p[0] = p[2]
 
 def p_error(p):
-    print(f"Syntax error at '{p.value}'")
+    p[0] = "ERROR"
 
 def t_error(t):
     print(f"Illegal character '{t.value[0]}'")
-    t.lexer.skip(1)
 
 parser = yacc.yacc()
 lexer = lex.lex()
