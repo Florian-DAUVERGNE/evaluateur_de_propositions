@@ -1,2 +1,7 @@
 parser.out
 parsetab.py
+.Dockerfile
+wget-log
+Code/__pycache__/Parser.cpython-310.pyc
+Code/__pycache__/parsetab.cpython-310.pyc
+parser
